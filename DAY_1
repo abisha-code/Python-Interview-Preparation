@@ -1,0 +1,89 @@
+
+#QN 1
+def check_even(num):
+    if num % 2 == 0:
+        return "Even"
+    return "Odd"
+
+num = int(input())
+print(check_even(num))
+
+
+#QN 2
+# try:
+#     num=int(input("Enter the number:"))
+#     if num>0:
+#         print("Positive Number")
+#     elif num<0:
+#         print("Negative Number")
+#     else:
+#         print("Zero")
+# except ValueError:
+#     print("ERROR:Enter a valid number")
+# else:
+#     print("The program ends.....")
+    
+
+#QN 3
+a, b = map(int, input().split())
+if a > b:
+    print(f"{a} is largest")
+else:
+    print(f"{b} is largest")
+
+
+#QN 4
+a, b, c = map(int, input().split())
+if a >= b and a >= c:
+    print(f"{a} is largest")
+elif b >= a and b >= c:
+    print(f"{b} is largest")
+else:
+    print(f"{c} is largest")
+
+
+#QN 5
+# try:
+#     num=int(input("Enter the number:"))
+#     if num%3==0 and num%5==0:
+#         print("Divisible by both 3 and 5")
+#     else:
+#         print("Not Divisible by both 3 and 5")
+# except ValueError:
+#     print("ERROR:Enter a valid number")
+# else:
+#     print("The program ends.....")
+
+
+#QN 6
+year = int(input())
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+
+#QN 7
+a, b = map(int, input().split())
+a, b = b, a
+print(f"a = {a}, b = {b}")
+
+
+#QN 8
+a, b = map(int, input().split()) # 10 20
+a = a + b #30
+b = a - b #30-20=10
+a = a - b #30-10=20
+print(f"a = {a}, b = {b}")
+
+
+
+#swap using a third (temporary) variable.
+a = int(input())
+b = int(input())
+temp = a #10
+a = b # 20
+b = temp # 10
+print(f"a = {a}, b = {b}")
+
+
